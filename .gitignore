@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# Тестування та покриття
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
