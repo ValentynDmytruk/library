@@ -22,8 +22,7 @@ class TestBook(unittest.TestCase):
     def test_decrease_available_success(self):
         """2. Перевірка успішного зменшення кількості книг при видачі"""
         self.book.decrease_available()
-        # НАВМИСНА ПОМИЛКА: очікуємо 999 замість 2
-        self.assertEqual(self.book.available_copies, 999)git add tests/test_book.py
+        self.assertEqual(self.book.available_copies, 2)
 
     def test_decrease_available_zero(self):
         """3. Перевірка обмеження: кількість копій не може стати меншою за 0"""
